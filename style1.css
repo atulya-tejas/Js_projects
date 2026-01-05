@@ -1,0 +1,130 @@
+* {
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: #d5dce1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+
+}
+
+.container{
+    width:500px;
+    background-color: #d5dce1;
+    border-radius: 20px;
+    border:1px dotted rgb(231, 234, 239);
+    box-shadow: 10px 10px 20px rgba(163, 177, 198, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    padding:10px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #999fa9;  
+    text-shadow: 3px 3px 6px #abacb0,  -3px -3px 6px #ffffff;
+
+}
+
+.inputContainer{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todoInput{
+    width: 80%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none; 
+    box-sizing: border-box;
+    background: #d5dce1; 
+    border-radius: 30px; 
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    color: #5e6879; 
+}
+
+#todoInput:focus{
+    box-shadow: inset 6px 6px 6px rgb(166, 108, 198), inset -6px -6px 6px rgb(222, 165, 253);
+}
+
+
+
+#addTaskBtn {
+    width: 40%;
+    height: 50px;
+    background-color: #d5dce1;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin:5px 10px 5px 20px ; 
+    box-shadow: 3px 3px 6px  #b8b9be , -3px -3px 6px   #fff;
+    transition: all 0.3s ease;
+    color: rgb(146, 84, 180);
+    font-weight: 900;
+}
+
+#addTaskBtn:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 6px  rgb(166, 108, 198), -3px -3px 6px  rgb(222, 165, 253);
+}
+
+#addTaskBtn:active {
+  box-shadow: inset 2px 2px 5px rgb(166, 108, 198), inset -3px -3px 5px rgb(222, 165, 253);
+}
+
+.todoList{
+    /* border: 2px solid  green;  */
+    width:70%;
+    list-style-type: none;
+    margin-top:;
+}
+
+.todoList li {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid  red;  */
+    border-radius: 40px;
+    margin-bottom: 10px;
+    height:60px ;
+    box-shadow: 3px 3px 6px  #b8b9be , -3px -3px 6px   #fff;
+}
+
+.todoList li button{
+    width:  70px;
+    height: 40px;
+    background-color: #d5dce1;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin:5px 10px 5px 20px ; 
+    box-shadow: 3px 3px 6px  #b8b9be , -3px -3px 6px   #fff;
+    transition: all 0.3s ease;
+    color: rgb(146, 84, 180);
+    font-weight: 900;
+}
+
+.todoList li button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 6px  rgb(166, 108, 198), -3px -3px 6px  rgb(222, 165, 253);
+}
+
+.todoList li button:active {
+  box-shadow: inset 2px 2px 5px rgb(166, 108, 198), inset -3px -3px 5px rgb(222, 165, 253);
+}
+
+
+
