@@ -22,6 +22,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 .container h1{
     padding:10px;
@@ -50,6 +51,7 @@ body{
     border-radius: 30px; 
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
     color: #5e6879; 
+    transition:all 0.3s ease;
 }
 
 #todoInput:focus{
@@ -76,55 +78,71 @@ body{
 
 #addTaskBtn:hover {
   cursor: pointer;
-  box-shadow: 3px 3px 6px  rgb(166, 108, 198), -3px -3px 6px  rgb(222, 165, 253);
+  box-shadow: 3px 3px 6px  rgb(152, 90, 186), -3px -3px 6px  rgb(235, 197, 255);
 }
 
 #addTaskBtn:active {
   box-shadow: inset 2px 2px 5px rgb(166, 108, 198), inset -3px -3px 5px rgb(222, 165, 253);
 }
 
-.todoList{
+#todoList{
     /* border: 2px solid  green;  */
     width:70%;
     list-style-type: none;
-    margin-top:;
+    
 }
 
-.todoList li {
+#todoList li {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* border: 2px solid  red;  */
     border-radius: 40px;
-    margin-bottom: 10px;
-    height:60px ;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    height:50px ;
     box-shadow: 3px 3px 6px  #b8b9be , -3px -3px 6px   #fff;
+    color: #7a7e84;  
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition:all 0.3s ease; 
 }
 
-.todoList li button{
+#todoList li:hover {
+    box-shadow: 3px 3px 6px  rgb(152, 90, 186), -3px -3px 6px  rgb(235, 197, 255);
+}
+
+#todoList li.completed span{
+  text-decoration: line-through rgb(208, 119, 255) 3px;
+  opacity: 0.6;
+}
+#todoList li.completed button{
+    color:rgb(166, 108, 198);
+    background-color:  #d5dce1;
+    box-shadow: inset 4px 4px 6px rgb(135, 77, 156), inset -4px -4px 6px rgb(218, 177, 240);
+}
+
+
+#todoList li button{
     width:  70px;
     height: 40px;
-    background-color: #d5dce1;
+    background-color:rgb(166, 108, 198);
     padding: 10px 10px;
     border: none;
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
     margin:5px 10px 5px 20px ; 
-    box-shadow: 3px 3px 6px  #b8b9be , -3px -3px 6px   #fff;
     transition: all 0.3s ease;
-    color: rgb(146, 84, 180);
+    color: white;
     font-weight: 900;
 }
 
-.todoList li button:hover {
+
+
+#todoList li button:hover {
   cursor: pointer;
-  box-shadow: 3px 3px 6px  rgb(166, 108, 198), -3px -3px 6px  rgb(222, 165, 253);
+  box-shadow:inset 3px 3px 3px rgb(135, 77, 156),
+  inset -3px -3px 3px rgb(218, 177, 240) ;
+
 }
-
-.todoList li button:active {
-  box-shadow: inset 2px 2px 5px rgb(166, 108, 198), inset -3px -3px 5px rgb(222, 165, 253);
-}
-
-
-
